@@ -3221,7 +3221,7 @@ function Library:Notify(Text, Time, SoundId)
 		if typeof(Time) == "Instance" then
 			Time.Destroying:Wait();
 		else
-			task.wait(Time or 5);
+			task.wait(Time or 8);
 		end
 
 		pcall(NotifyOuter.TweenSize, NotifyOuter, UDim2.new(0, 0, 0, YSize), 'Out', 'Quad', 0.4, true);
